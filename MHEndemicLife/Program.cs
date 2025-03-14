@@ -1,6 +1,9 @@
+using MHEndemicLife.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// µù¥U Repository ¨Ì¿àª`¤J
+builder.Services.AddScoped<EndemicLifeRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
